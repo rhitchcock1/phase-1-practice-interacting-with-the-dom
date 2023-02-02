@@ -1,32 +1,39 @@
-/// I commented out the solution in HTML    
-
 const heartBtn = document.querySelector("#heart")
-
 const likeBtn = document.querySelector("#like")
-
 const pauseBtn = document.querySelector("#pause")
-// let counter = document.querySelector("#counter")
 const minusBtn = document.querySelector("#minus")
 
 
-
-// let likes = plusBtn + 1
 const plusBtn = document.querySelector("#plus")
+let numoflike = 0
+
+
 plusBtn.addEventListener("click", (e) => {
-    counter = counter.id
-    counter.append( )
+    numoflike++;
+  let counter = document.querySelector("#counter")
     
-    let counter = document.querySelector("#counter")   
+  counter.textContent = numoflike
+    console.log(numoflike)
+}) 
+
+minusBtn.addEventListener("click", (e) => {
+    numoflike--;
+let counter = document.querySelector("#counter")
+counter.textContent = numoflike
+console.log(numoflike)
+}) 
+
+ 
     
     
     // counter.id = 1
     // let counter = document.querySelector("#counter").value
     // // .e.target.counter ++
-    console.log(counter)
+ 
 
 
 
 
 
-}) 
+
 
